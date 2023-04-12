@@ -43,3 +43,52 @@ button1.onclick = function () {
 }
 
 //    < !--Прослушка событий 2. Форма-- >=================================================
+
+const inputText = document.querySelector('#input-text')
+const textBlock = document.querySelector('#text-block')
+
+// variant 1
+/*
+inputText.addEventListener('input', function () {
+    // console.log('input')
+    console.log(inputText.value)
+    textBlock.innerText = inputText.value
+})
+*/
+
+// variant 2 (the same to var.1) - with arrow function
+/*
+inputText.addEventListener('input', () => {
+    // console.log('input')
+    console.log(inputText.value)
+    textBlock.innerText = inputText.value
+})
+*/
+
+// variant 3 (the same to var.1) - with separated function
+/*
+inputText.addEventListener('input', inputHundler)
+
+function inputHundler() {
+    console.log(inputText.value)
+    textBlock.innerText = inputText.value
+}
+*/
+
+//    < !--Прослушка событий 3. Event-- >=================================================
+
+// general
+/*
+const list = document.querySelector('#list')
+list.addEventListener('click', function () {
+    console.log(this)
+})
+*/
+
+//anything particullar
+const list = document.querySelector('#list')
+list.addEventListener('click', function (event) {
+    console.log(this)
+    console.log(event)
+    console.log(event.target)
+})
