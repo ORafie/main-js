@@ -154,7 +154,7 @@ function submitVacation(message) {
 // 1.check availability of hotel rooms
 // 2.check availability of tickets
 // 3.decide about vacation
-
+/*
 function checkRooms(success, failed) {
     setTimeout(function () {
         console.log('1. check of availability of hotel rooms...')
@@ -199,23 +199,23 @@ function submitVacation(message) {
     console.log('3. answer from 1.step:', message)
     console.log('4. going to have vacantion')
 }
-/*
-checkRooms(
-    function (messageFromCheckRooms) {
-        checkTickets(
-            messageFromCheckRooms,
-            function (messageFromCheckTickets) {
-                submitVacation(messageFromCheckTickets)
-            },
-            function (messageFromCheckTickets) {
-                cancelVacation(messageFromCheckTickets)
 
-            })
-    },
-    function (messageFromCheckRooms) {
-        cancelVacation(messageFromCheckRooms)
-    })
-*/
+// checkRooms(
+//     function (messageFromCheckRooms) {
+//         checkTickets(
+//             messageFromCheckRooms,
+//             function (messageFromCheckTickets) {
+//                 submitVacation(messageFromCheckTickets)
+//             },
+//             function (messageFromCheckTickets) {
+//                 cancelVacation(messageFromCheckTickets)
+
+//             })
+//     },
+//     function (messageFromCheckRooms) {
+//         cancelVacation(messageFromCheckRooms)
+//     })
+
 // the same checkRooms but shorter
 checkRooms(
     function (messageFromCheckRooms) {
@@ -226,3 +226,4 @@ checkRooms(
     },
     cancelVacation
 )
+*/
