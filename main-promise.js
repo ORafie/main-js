@@ -258,13 +258,14 @@ function failed(data) {
 
 // Цепочка промисов. Несколько промисов с setTimeout======================================
 // the same but a bit shorter with all functions
+/*
 checkRooms().then(checkTickets).then(success).catch(failed)
 //could write previous line more obvious look
-/*checkRooms()
-    .then(checkTickets)
-    .then(success)
-    .catch(failed)
-    */
+// checkRooms()
+//     .then(checkTickets)
+//     .then(success)
+//     .catch(failed)
+    
 
 function checkRooms() {
     return new Promise(function (resolve, reject) {
@@ -314,3 +315,4 @@ function failed(data) {
     console.log('answer from previous step:', data)
     console.log('stay home...')
 }
+*/
