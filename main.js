@@ -502,3 +502,25 @@ if (head.classList.contains('green')) {
 // // console.log(typeof res6)
 // let res6 = summ6(55, 6)
 // console.log(res6)
+
+
+function checkAge(age) {
+    return (age > 18) ? true : confirm('Родители разрешили?');
+}
+console.log(checkAge(19))
+
+function myAge(age) {
+    return age > 18 || confirm('Need confirmation!')
+}
+myAge(16)
+console.log(myAge(20))
+
+function min(a, b) {
+    return a > b ? b : a
+}
+let mini = min(1, 1)
+console.log(mini)
+
+function pow(x, n) {
+    return x
+}
